@@ -26,7 +26,21 @@ spec:
       - name: mysql
         image: mahe1120/mysql:1.0.0
 
-
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: mysql
+spec:
+  selector:
+    app: mysql
+    tier: mysql
+    project: expense
+  ports:
+  - protocol: TCP
+    port: 3306
+    targetPort: 3306
+  
 
 
 
