@@ -21,10 +21,10 @@ spec:
         app: mysql
         tier: mysql
         project: expense
-spec:
-  containers:
-  - name: mysql
-    image: mahe1120/mysql:1.0.0
+    spec:
+      containers:
+      - name: mysql
+        image: mahe1120/mysql:1.0.0
 
 
 
